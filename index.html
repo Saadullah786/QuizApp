@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hidden" id="start">
+        <div class="top">
+        <h1>QUIZ APP</h1>
+        <h3>Total Questions 5</h3>
+        <h1>GET STARTED</h1>
+        <button id="sbtn" onclick="start()">START</button>
+    </div>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="hide" id="q1">
+    <div><h1>What is full abbrevation of HTML</h1></div>
+    <table>
+        <tr><td onclick="wa(this)">a) Scripting Language</td></tr>
+        <tr><td onclick="correctanswer1(this)">b) Hyper text markup language</td></tr>
+        <tr><td onclick="wa(this)">c) Hyper programming text</td></tr>
+        <tr><td onclick="wa(this)">d) None of them</td></tr>
+    </table>
+    <button class="btn" onclick="nxt1()">NEXT</button>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="hide" id="q2">
+        <div><h1>Who is the president of Pakistan</h1></div>
+        <table>
+            <tr><td onclick="wa(this)">a) Imran Khan</td></tr>
+            <tr><td onclick="correctanswer2(this)">b) Arif Alvi</td></tr>
+            <tr><td onclick="wa(this)">c) Nawaz Shareef</td></tr>
+            <tr><td onclick="wa(this)">d) Bilawal Bhutto</td></tr>
+        </table>
+        <button onclick="nxt2()">NEXT</button>
+        </div>
+
+        <!-- Question 3 -->
+    <div class="hide" id="q3">
+        <div><h1>What is National Game of Pakistan</h1></div>
+        <table>
+            <tr><td onclick="wa(this)">a) Cricket</td></tr>
+            <tr><td onclick="wa(this)">b) Football</td></tr>
+            <tr><td onclick="correctanswer3(this)">c) Hockey</td></tr>
+            <tr><td onclick="wa(this)">d) Tennis</td></tr>
+        </table>
+        <button onclick="nxt3()">NEXT</button>
+        </div>
+
+        <!-- Question 4 -->
+    <div class="hide" id="q4">
+        <div><h1>HTML is a</h1></div>
+        <table>
+            <tr><td onclick="wa(this)">a) Scripting Language</td></tr>
+            <tr><td onclick="correctanswer4(this)">b) Markup Language</td></tr>
+            <tr><td onclick="wa(this)">c) Hyper programming text</td></tr>
+            <tr><td onclick="wa(this)">d) None of them</td></tr>
+        </table>
+        <button onclick="nxt4()">NEXT</button>
+        </div>
+
+        <!-- Question 5 -->
+    <div class="hide" id="q5">
+        <div><h1>CSS stands for</h1></div>
+        <table>
+            <tr><td onclick="correctanswer5(this)">a) Cascading Styling Sheet</td></tr>
+            <tr><td onclick="wa(this)">b) Computer Case</td></tr>
+            <tr><td onclick="wa(this)">c) C scripting source</td></tr>
+            <tr><td onclick="wa(this)">d) Complete source sheet</td></tr>
+        </table>
+        <button onclick="result()">Result</button>
+        </div>
+        <div class="hide" id="report">
+            <table>
+                <h1>RESULT</h1>
+                <tr><td colspan="2">Total Questions 5</td></tr>
+                <tr><td>Question 1</td><td id="s1"></td></tr>
+                <tr><td>Question 2</td><td id="s2"></td></tr>
+                <tr><td>Question 3</td><td id="s3"></td></tr>
+                <tr><td>Question 4</td><td id="s4"></td></tr>
+                <tr><td>Question 5</td><td id="s5"></td></tr>
+                <tr><td>Total Score</td><td id="ts"></td></tr>
+            </table>
+        </div>
+</body>
+<script src="app.js"></script>
+</html>
